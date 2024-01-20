@@ -1,9 +1,94 @@
-
-
-
 #App{
-  
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 400px) {
+  .quote-box{
+    
+    width: 400px!important;
+    
+  }
+}
+.quote-box{
+  
+  width: 500px;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: rgb(255,173,191);
+background: linear-gradient(274deg, rgba(255,173,191,1) 0%, rgba(159,255,224,1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.quote-text{
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+.quote-author{
  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.quote-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.share-quote{
+ 
+  display: flex;
+  align-items: center;
+  
+}
+.share-quote a{
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: #300915;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1rem;
+  border-radius: 0.1rem;
+  
+}
+.share-quote a:hover{
+  color: #300915;
+  background-color: white;
+}
+.quote-footer button{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: #300915;
+  border: none;
+  padding: 0 1rem;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1rem;
+  border-radius: 0.1rem;
+}
+.quote-footer button:hover{
+  font-size: 1rem;
+  cursor: pointer;
+  color: #300915;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }

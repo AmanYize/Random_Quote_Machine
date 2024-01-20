@@ -1,5 +1,7 @@
 import React from "react";
 
+/* Create An Array Of Objects Which Contain Different Gradient Colors */
+
 const AppBg = [
   {
     background: "rgb(255,184,202)",
@@ -27,6 +29,8 @@ const AppBg = [
       "linear-gradient(155deg, rgba(110,34,51,1) 0%, rgba(75,27,4,1) 100%)",
   },
 ];
+
+/* Generate A Random Gradient Color From The Array Of Objects */
 
 export default function RandomBG() {
   const randomIndex = Math.floor(Math.random() * AppBg.length);
